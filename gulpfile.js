@@ -10,11 +10,12 @@ const hub = new HubRegistry([conf.path.tasks('*.js')]);
 // Tell gulp to use the tasks just loaded
 gulp.registry(hub);
 
+gulp.task('heroku', gulp.series('build', 'serveprod'));
 gulp.task('inject', gulp.series(gulp.parallel('styles', 'scripts'), 'inject'));
 gulp.task('build', gulp.series('partials', gulp.parallel('inject', 'other'), 'build'));
 gulp.task('test', gulp.series('scripts', 'karma:single-run'));
 gulp.task('test:auto', gulp.series('watch', 'karma:auto-run'));
-gulp.task('serve', gulp.series('inject', 'watch', 'browsersync'));
+gulp.task('serve', gulp.series('clean', 'inject', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
