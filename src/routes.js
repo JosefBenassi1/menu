@@ -9,7 +9,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 
   $stateProvider
     .state('app', {
-      url: '/',
+      abstract: true,
       component: 'app'
     });
 }
