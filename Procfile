@@ -1,1 +1,1 @@
-web: node gulp serveprod
+web: node serve.js

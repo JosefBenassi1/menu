@@ -65,7 +65,6 @@
   },
   "scripts": {
     "postinstall": "bower install && gulp build",
-    "start": "http-server ./ -p ${PORT:=5000} -c-1",
     "build": "gulp",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
@@ -89,8 +88,11 @@
     ]
   },
   "dependencies": {
-    "http-server": "*",
     "bower": "^1.8.0",
-    "gulp": "github:gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb"
+    "express": "^4.15.3",
+    "gulp": "github:gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb",
+    "gzippo": "^0.2.0",
+    "http-server": "*",
+    "morgan": "^1.8.2"
   }
 }
