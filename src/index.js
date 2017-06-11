@@ -1,2 +1,2 @@
-const menu = angular
+angular
   .module('menu', ['ui.router']);
