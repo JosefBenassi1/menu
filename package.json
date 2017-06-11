@@ -64,7 +64,7 @@
     "wiredep": "^4.0.0"
   },
   "scripts": {
-    "postinstall":"bower install && gulp build",
+    "postinstall":"npm install && bower install && gulp build && gulp serveprod",
     "start" : "gulp serveprod",
     "build": "gulp",
     "serve": "gulp serve",
