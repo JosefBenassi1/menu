@@ -1,2 +1,2 @@
 angular
-  .module('menu', ['ui.router']);
+  .module('menu', ['ui.router', 'firebase']);

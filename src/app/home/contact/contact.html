@@ -1,3 +1,7 @@
-<h1 class="animated zoomIn">IM THE CONTACT PAGE</h1>
+<h1 class="animated zoomIn">{{contact.mytext}}</h1>
 
 <menu-loader visible="home.loading"></menu-loader>
+
+<input ng-model="contact.mytext" placeholder="my input">
+
+<button class="btn btn-lg btn-success" ng-click="contact.test()">TESTER</button>

@@ -7,16 +7,14 @@ angular.module('menu')
             const home   = this;
             home.loading = true;
 
-            $timeout(() => {
-                home.loading = false;
-                home.menu    = [{
-                    title: 'About',
-                    link : 'app.home.about'
-                }, {
-                    title: 'Contact',
-                    link : 'app.home.contact'
-                }];
-            }, 5000);
+            home.loading = false;
+            home.menu    = [{
+                title: 'About',
+                link : 'app.home.about'
+            }, {
+                title: 'Contact',
+                link : 'app.home.contact'
+            }];
 
         }
     });

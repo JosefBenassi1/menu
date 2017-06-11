@@ -16,7 +16,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li ng-repeat="item in home.menu" ui-sref-active="active">
-                    <a href="#" ui-sref="item.link">{{item.title}} <span class="sr-only">(current)</span></a>
+                    <a ui-sref="{{item.link}}">{{item.title}} <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
 
