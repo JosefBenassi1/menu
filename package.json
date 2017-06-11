@@ -58,7 +58,8 @@
     "wiredep": "^4.0.0"
   },
   "scripts": {
-    "postinstall":"bower install",
+    "postinstall":"bower install ",
+    "start" : "gulp heroku",
     "build": "gulp",
     "serve": "gulp serve",
     "serve:dist": "gulp serve:dist",
