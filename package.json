@@ -79,5 +79,9 @@
     "extends": [
       "xo-space/esnext"
     ]
+  },
+  "dependencies": {
+    "bower": "^1.8.0",
+    "gulp": "github:gulpjs/gulp#4ed9a4a3275559c73a396eff7e1fde3824951ebb"
   }
 }

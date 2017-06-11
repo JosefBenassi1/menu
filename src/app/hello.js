@@ -1,8 +1,7 @@
 angular
-    .module('app')
-    .component('app', {
+    .module('menu').component('app', {
         templateUrl: 'app/hello.html',
-        controller() {
-            this.hello = 'Hello World!';
+        controller($log) {
+ 
         }
     });

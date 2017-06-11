@@ -1,3 +1,5 @@
+/*
+
 describe('hello component', () => {
   beforeEach(module('app', $provide => {
     $provide.factory('app', () => {
@@ -13,3 +15,4 @@ describe('hello component', () => {
     expect(h1.html()).toEqual('Hello World!');
   }));
 });
+*/

@@ -1,2 +1,2 @@
-angular
-  .module('app', ['ui.router']);
+const menu = angular
+  .module('menu', ['ui.router']);
