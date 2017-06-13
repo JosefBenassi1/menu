@@ -2,7 +2,10 @@ angular.module('menu')
     .component('home', {
         templateUrl : 'app/home/home.html',
         controllerAs: 'home',
-        controller($timeout) {
+        controller() {
+
+            const h1 = this;
+            h1.copy = 'Menu jp';
 
             const home   = this;
             home.loading = true;
@@ -16,5 +19,17 @@ angular.module('menu')
                 link : 'app.home.contact'
             }];
 
+        
+           
+
+
+
+
         }
+
+
+
     });
+
+
+   
