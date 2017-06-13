@@ -4,10 +4,12 @@ angular.module('menu')
         controllerAs: 'home',
         controller() {
 
-            const h1 = this;
-            h1.copy = 'Menu jp';
+        
 
             const home   = this;
+            
+            home.h1 = "MenuJP"
+
             home.loading = true;
 
             home.loading = false;
@@ -19,7 +21,7 @@ angular.module('menu')
                 link : 'app.home.contact'
             }];
 
-        
+            
            
 
 
