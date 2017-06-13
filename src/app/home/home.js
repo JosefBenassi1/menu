@@ -8,7 +8,7 @@ angular.module('menu')
 
             const home   = this;
             
-            home.h1 = "MenuJP"
+            home.h1 = 'MenuJP';
 
             home.loading = true;
 
