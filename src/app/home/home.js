@@ -4,10 +4,8 @@ angular.module('menu')
         controllerAs: 'home',
         controller() {
 
-        
+            const home = this;
 
-            const home   = this;
-            
             home.h1 = 'MenuJP';
 
             home.loading = true;
@@ -21,15 +19,7 @@ angular.module('menu')
                 link : 'app.home.contact'
             }];
 
-            
-           
-
-
-
-
         }
-
-
 
     });
 

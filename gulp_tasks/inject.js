@@ -11,6 +11,8 @@ gulp.task('inject', inject);
 function inject() {
     const injectScripts = gulp.src([
             conf.path.tmp('**/*.js'),
+            'bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
+            'bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
             `!${conf.path.tmp('**/*.spec.js')}`
         ])
         .pipe(angularFilesort()).on('error', conf.errorHandler('AngularFilesort'));
